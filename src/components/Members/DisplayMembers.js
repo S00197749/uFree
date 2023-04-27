@@ -33,7 +33,7 @@ function DisplayMembers(props) {
                 <img src="img/avatars/avatar.png" class="avatar img-fluid rounded-circle me-1" alt="Member" />
               </div>
               <div className='col-6 col-sm-7'>
-                <h4>{props.groupMember.user_Name}</h4>
+                <h4>{props.groupMember.firstName}</h4>
               </div>
               <div className='col-3'>
                 <span>
@@ -50,7 +50,7 @@ function DisplayMembers(props) {
               <Modal.Title>Confirm Removal</Modal.Title>
             </Modal.Header>
             <Modal.Body >
-              <h3 style={{textAlign: "center"}}>Are you sure you want to remove the following member: <br></br> "{props.groupMember.user_Name}"?</h3>
+              <h3 style={{textAlign: "center"}}>Are you sure you want to remove the following member: <br></br> "{props.groupMember.firstName + ' ' + props.groupMember.lastName}"?</h3>
             </Modal.Body>
             <Modal.Footer>
               <Button variant="secondary" onClick={() => setShowConfirmDeleteMember(false)}>

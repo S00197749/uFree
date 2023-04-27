@@ -10,7 +10,7 @@ function Main(props) {
   const getMembersUrl = "https://schedule-functions.azurewebsites.net/api/GetGroupMembers?code=ncp67DrFLYo3QOPXNMO-rn-C_XOJnxThhLZoiX6s8dLJAzFuOrq_YQ==";
 	const getActivitiesUrl = "https://schedule-functions.azurewebsites.net/api/GetGroupActivities?code=DwwGHy69g92gFwXoOfBmimS9aaOmBjK1Y0HMc-O-DyyxAzFuDaQDpQ==";
 
-  const u = 1;
+  const u = props.user_Id;
   const g = props.group.group_Id;
 
   const fetchMembersData = async () => {

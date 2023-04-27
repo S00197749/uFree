@@ -32,7 +32,7 @@ function CreateUserSchedule(props) {
             console.log('Updated')
         })
 
-        window.location.reload(false);
+        props.callFetch();
     }
 
     return (

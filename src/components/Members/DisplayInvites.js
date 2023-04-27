@@ -26,6 +26,7 @@ function DisplayInvites(props) {
     })
 
     props.fetchInvitesData();
+    props.fetchGroupsData();
   }
 
   return (

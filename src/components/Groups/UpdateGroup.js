@@ -29,7 +29,7 @@ function UpdateGroup(props) {
             console.log('Updated')
         })
 
-        props.fetchGroupsData();
+        props.fetchGroupsData(props.user_Id);
     }
 
     const DeleteGroup = async (e) => {
@@ -48,7 +48,7 @@ function UpdateGroup(props) {
             console.log('Updated')
         })
     
-        props.fetchGroupsData();
+        props.fetchGroupsData(props.user_Id);
       }
 
     return (

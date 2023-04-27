@@ -29,7 +29,7 @@ function CreateActivity(props) {
         const url = "https://schedule-functions.azurewebsites.net/api/CreateActivity?code=jUDV5hSKYEBQ81GUkCWQCFKuRXfazH5iCWvcvLFbEeqsAzFuUv6KjQ==";
 
         const data = {
-            User_Id: 1
+            User_Id: props.user_Id
             , Group_Id: props.group.group_Id 
             , Activity_Name: payload.activity_Name
             , Activity_Description: payload.activity_Desc
