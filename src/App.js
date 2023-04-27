@@ -57,7 +57,6 @@ function App() {
 		setUser(userObject);
 		const user_Id = await GetUserInfo(userObject);
 		await fetchGroupsData(user_Id);
-		await fetchInvitesData(user_Id);
 		setShowGroup(0);
 		document.getElementById("signInDiv").hidden = true;
 	}
@@ -112,7 +111,7 @@ function App() {
 								<NavDropdown.Item href="#" onClick={() => setShowGroup(0)}>
 									My Schedule
 								</NavDropdown.Item>
-								<NavDropdown.Item href="#" onClick={() => setShowInvites(true)}>
+								<NavDropdown.Item href="#" onClick={() => setShowInvites(true) + fetchInvitesData(userInfo.user_Id)}>
 									Invites
 								</NavDropdown.Item>
 								<NavDropdown.Divider />
