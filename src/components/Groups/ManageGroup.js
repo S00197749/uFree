@@ -75,16 +75,25 @@ function ManageGroup(props) {
               </Nav.Item>
             </Nav>
 
-            {props.groupActivities.map(groupActivity =>
-              <DisplayActivities 
-                user_Id={props.user_Id}
-                groupActivity={groupActivity} 
-                fetchActivitiesData={()=> props.fetchActivitiesData()}
-                callShowSettings={()=> setShowSettings(true)+ setShowActivities(false) + setShowCreateActivity(false)}
-                callShowActivities={()=> setShowActivities(true) + setShowCreateActivity(false) + setShowSettings(false)}
-                callHideActivities={()=> setShowActivities(false)}>
-              </DisplayActivities>
-            )}
+            { props.groupActivities.length !== 0 ?
+							<div>
+								{props.groupActivities.map(groupActivity =>
+                  <DisplayActivities 
+                    user_Id={props.user_Id}
+                    groupActivity={groupActivity} 
+                    fetchActivitiesData={()=> props.fetchActivitiesData()}
+                    callShowSettings={()=> setShowSettings(true)+ setShowActivities(false) + setShowCreateActivity(false)}
+                    callShowActivities={()=> setShowActivities(true) + setShowCreateActivity(false) + setShowSettings(false)}
+                    callHideActivities={()=> setShowActivities(false)}>
+                  </DisplayActivities>
+                )}
+							</div>
+							:
+							<div className='mt-5'>
+								<h3 style={{textAlign:"center"}}>No Activities.</h3>
+							</div>
+						}
+            
 
           </Modal.Body>
           <Modal.Footer>

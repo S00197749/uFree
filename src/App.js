@@ -170,15 +170,21 @@ function App() {
 						<Modal.Title>My Invites</Modal.Title>
 					</Modal.Header>
 					<Modal.Body>
-
-						{invites.map(invite =>
-							<DisplayInvites 
-							user_Id={userInfo.user_Id} 
-							invite={invite}
-							fetchInvitesData={()=> fetchInvitesData(userInfo.user_Id)}
-							fetchGroupsData={()=> fetchGroupsData(userInfo.user_Id)}></DisplayInvites>
-						)}
-
+						{ invites.length !== 0 ?
+							<div>
+								{invites.map(invite =>
+									<DisplayInvites 
+									user_Id={userInfo.user_Id} 
+									invite={invite}
+									fetchInvitesData={()=> fetchInvitesData(userInfo.user_Id)}
+									fetchGroupsData={()=> fetchGroupsData(userInfo.user_Id)}></DisplayInvites>
+								)}
+							</div>
+							:
+							<div>
+								<h3 style={{textAlign:"center"}}>No Invites.</h3>
+							</div>
+						}
 					</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={() => setShowInvites(false)}>
