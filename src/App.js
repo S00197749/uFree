@@ -12,7 +12,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import jwtDecode from "jwt-decode";
-import Main2 from "./components/Main2";
 
 function App() {	
 	const [groups, setGroups] = useState([]);
