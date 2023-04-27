@@ -1,0 +1,72 @@
+.timeline-item-complete:before {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+}
+
+.timeline-item-complete:before {
+    background: #fff;
+    border: 10px solid #3f80ea;
+    border-radius: 50%;
+    height: 20px;
+    left: 0;
+    width: 20px;
+}
+
+.ql-editor {
+    height: 100px;
+}
+
+.custom-sidebar {
+    background:#808080;
+    direction:ltr;
+    max-width:260px;
+    min-width:90px;
+}
+
+.card{
+    border: none;
+    height: 320px
+}
+
+.forms-inputs{
+    position: relative
+}
+
+.forms-inputs span{
+    position: absolute;
+    top:-18px;
+    left: 10px;
+    background-color: #fff;padding: 5px 10px;
+    font-size: 15px
+}
+
+.forms-inputs input{
+    height: 50px;
+    width: 100%;
+    border: 2px solid rgb(201, 201, 201)
+}
+
+.forms-inputs input:focus{
+    box-shadow: none;
+    outline: none;
+    border: 2px solid rgb(0, 0, 0)
+}
+
+.login-btn{
+    height: 50px
+}
+
+.success-data{
+    display: flex;
+    flex-direction: column
+}
+
+.bxs-badge-check{
+    font-size: 90px
+}
+
+.heading{
+    text-align: center;
+}
