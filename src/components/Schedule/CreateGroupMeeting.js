@@ -46,10 +46,11 @@ function CreateGroupMeeting(props) {
                     <br></br>  
                     <DropDownListComponent name="activity_Id" placeholder='Choose Activity' data-name='activity_Name' className="e-field" style={{ width: '100%' }}
                         dataSource={props.groupActivities}
+                        required
                         fields={{text: 'activity_Name', value: 'activity_Id'}}>
                     </DropDownListComponent> 
-                    <div>
-                        
+                    <div hidden={props.groupActivities.length !== 0}>
+                        <span>Create an activity to add a meeting.</span>
                     </div>                     
                 </Form>
             </Card>

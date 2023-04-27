@@ -86,7 +86,7 @@ function UpdateUserSchedule(props) {
                     <br></br>   
                     <div className="row">   
                         <div hidden={!props.timeSlot.isRecurring} className="col">      
-                            <span>Recurring weekly, check the box below if you wish to update or delete all instances of this time slot.</span>
+                            <span>Recurring weekly, check the box below if you wish to update all instances of this time slot.</span>
                         </div>  
                     </div>  
                     <br></br> 

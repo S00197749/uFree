@@ -13,7 +13,7 @@ function ManageGroup(props) {
 
     return (
       <>
-        <Button className='mx-4' variant="primary" onClick={() => setShowSettings(true)}>
+        <Button className='ms-4' variant="primary" onClick={() => setShowSettings(true)}>
          Manage Group
         </Button>
   

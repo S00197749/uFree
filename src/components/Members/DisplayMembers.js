@@ -29,13 +29,13 @@ function DisplayMembers(props) {
         <Card className='border border-secondary h-25'>
           <Card.Body>
             <div className='row'>
-              <div className='col-3 col-sm-2'>
+              <div className='col-3 col-sm-2 px-0'>
                 <img src="img/avatars/avatar.png" class="avatar img-fluid rounded-circle me-1" alt="Member" />
               </div>
-              <div className='col-6 col-sm-7'>
+              <div className='col-6 col-sm-7 px-0'>
                 <h4>{props.groupMember.firstName}</h4>
               </div>
-              <div className='col-3'>
+              <div className='col-3 px-0'>
                 <span>
                   <Button onClick={() => setShowConfirmDeleteMember(true)} variant='danger'>Remove</Button>
                 </span>

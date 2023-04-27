@@ -40,7 +40,7 @@ function Main(props) {
             <h3>Group Schedule: {props.group.group_Name}</h3>
           </div>
           <div class="row justify-content-end">
-            <div class="col-auto">
+            <div class="col-auto pe-0">
               <GroupMembers 
               user_Id={props.user_Id} 
               group={props.group} 

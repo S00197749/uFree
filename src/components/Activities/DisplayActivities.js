@@ -42,8 +42,8 @@ function DisplayActivities(props) {
             </div>
             <div className='col-6 col-sm-4'>
               <span>
-                <Button onClick={() => setShowUpdateActivity(true)} variant='success' className='mr-2'>Edit</Button>
-                <Button onClick={() => setShowConfirmDeleteActivity(true)} variant='danger' className='mx-2'>Remove</Button>
+                <Button onClick={() => setShowUpdateActivity(true)} variant='success' className=''>Edit</Button>
+                <Button onClick={() => setShowConfirmDeleteActivity(true)} variant='danger' className='ms-2'>Remove</Button>
               </span>
             </div>
           </div>
